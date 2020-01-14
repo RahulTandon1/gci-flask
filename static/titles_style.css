@@ -1,0 +1,62 @@
+/* -------- Titles container style --------- */
+#titlesHeading, #displayerHeading {
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(57, 61, 64);
+}
+#titlesHeading {
+    position: absolute;
+        top: 15%;
+        left: 11%;
+}
+#displayerHeading {
+    position: absolute;
+        top: 15%;
+        right: 11%;
+}
+#titlesContainer {
+    border-style: solid;
+    border-radius: 5px;
+    position: absolute;
+        top: 22.5%;
+        left: 10%;
+    box-sizing: border-box;
+        width: 30%;
+        height: 60%;
+    overflow-y: auto;
+}
+
+
+.title {
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.2em;
+    font-size: 0.75em;
+    box-sizing: border-box;
+        width: 95%;
+        height: 10%;
+    padding-left: 3%;
+}
+.title a, .title a:visited {
+    color:rgb(123, 133, 140);
+    font-weight: bolder;
+}
+/* -------- file Content Displayer style --------- */
+#fileContentDisplayer { 
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(255, 241, 92);
+    color: rgb(112, 119, 124);
+    position: absolute;
+        left: 45%;
+        top: 22.5%;
+    box-sizing: border-box;
+        width: 45%;
+        height: 60%;
+    padding-top: 2%;
+    padding-left: 2%;
+}

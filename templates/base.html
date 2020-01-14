@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title></title>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='base_style.css')}}" />
+    {% block addStylesheet%} {% endblock%}
+  </head>
+  <body>
+    <nav>
+      <a href='{{ url_for("viewTitles") }}'>View Files</a>
+      <a href='{{ url_for("form") }}'>Upload File</a>
+    </nav>
+    {% block content %} {% endblock%}
+    <footer>
+      Made with <i class="fa fa-heart"></i> by <strong>rt</strong> for <strong>Fedora</strong>
+    </footer>
+    {% block addScript %} {% endblock%}
+  </body>
+</html>

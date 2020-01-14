@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block addStylesheet%}
+<link rel="stylesheet" href="{{ url_for('static', filename='titles_style.css')}}" />
+{% endblock %}
+
+{% block content%}
+<span id='titlesHeading'>Titles</span>
+<div id="titlesContainer">
+  {% for title in titles%}
+  <div class="title"><h2><a class='titleAnchor'href='#'>{{ title }}</a></h2></div>
+  {% endfor %}
+</div>
+<span id='displayerHeading'>File Contents</span>
+<div id='fileContentDisplayer'>
+  hello world
+</div>
+{% endblock %} 
+
+{% block addScript %}
+<script src=" {{ url_for('static', filename='titles_script.js')}} "></script>
+{% endblock %}

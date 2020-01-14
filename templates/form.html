@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block addStylesheet%} 
+<link rel="stylesheet" href="{{ url_for('static', filename='form_style.css')}}" />
+{% endblock%}
+
+{% block content %} 
+<div id='container'>
+    <h1 id='form-heading'>Upload Form</h1>
+    <p>Files can only by of .txt extension</p>
+    <form id='fileForm' method='post' enctype='multipart/form-data' action='/submitForm'>
+        <input type='file' name='clientFile'/><br>
+        <input type='text' name='fileTitle' value='Title'/><br>
+        <input type='submit' value='Submit'><br>
+        Click 'Submit' or press the enter key to upload the .txt file.
+    </form>
+</div>
+{% endblock%}

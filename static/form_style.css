@@ -1,0 +1,20 @@
+#container {
+    border-style: solid;
+    border-radius: 5px;
+    padding-left: 3%;
+
+    box-sizing: border-box;
+        width: 50%;
+        height: 40%;
+
+    position: absolute;
+        top: 20%;
+        left: 30%;
+}
+#container h1 {
+    margin-bottom: 1%;
+}
+#container form input {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}

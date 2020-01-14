@@ -1,0 +1,22 @@
+#errorDiv {
+    border-style: dashed;
+    color: rgb(81, 89, 86);
+    
+    box-sizing: border-box;
+        width: 50%;
+        height: 50%;
+    
+    position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
+
+#errorDiv a, #errorDiv a:visited {
+    color: inherit;
+    font-weight: bolder;
+}

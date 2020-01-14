@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block addStylesheet%} 
+<link rel="stylesheet" href="{{ url_for('static', filename='error_style.css')}}" />
+{% endblock%}
+
+{% block content %}
+<div id='errorDiv'>
+    <h2>The backend says that an error occurred</h2><br><br>
+    {{error}}<br>
+    <p>Please retry by visiting the <a href="{{ url_for('form')}}">Upload File</a> page from the link above</p>
+    
+</div>
+{% endblock%}

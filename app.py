@@ -101,7 +101,3 @@ def getText(title):
         'text': text
     }
     return res
-
-
-# running flask app!
-app.run(debug=True)
